@@ -1,0 +1,88 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 16pt;
+	font-size: 12pt;
+
+}
+.full {
+	overflow: hidden;
+}
+.nav {
+	width: 50;
+	height: 50;
+	position: fixed;
+	top: 25;
+	left: 25;
+	z-index: 5;
+}
+.nav img {
+	width: 100%;
+}
+.nav .close {
+	display: none;
+	}
+.clock {
+	position: relative;
+	margin: 0;
+	list-style: none;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+.full .clock {
+	width: 94vh;
+	height: 94vh;
+	margin-left: -50vh;
+	left: 50vw;
+	margin-top: 3vh;
+}
+.catalogue .clock {
+	width: 20vw;
+	height: 20vw;
+}
+.sec, .min, .hour {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.sec {
+	z-index: 1;
+}
+.min {
+	z-index: 2;
+}
+.hour {
+	z-index: 3;
+}
+.clocks {
+	display: inline-block;
+	margin-top: 15;
+}
+.catalogue {
+	display: none;
+	background: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 4;
+	padding-bottom: 20;
+	}
+
+.catalogue h1 {
+	font-weight: normal;
+	font-size: 35pt;
+	margin-top: 42;
+	}
+
+.catalogue .clock, .nav {
+	cursor: pointer;
+	}
